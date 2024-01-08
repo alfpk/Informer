@@ -89,12 +89,12 @@ def send_error_message(err_obj):
     exit()
 
 
-# def get_path_docs(file_name):  # Формируем путь к документу
-#    pdf_path = conf.PDF_PATH + file_name + ".pdf"
-#    try:
-#        return open(pdf_path, "rb")
-#    except Exception as error:
-#        send_error_message(error)
+def get_path_docs(file_name):  # Формируем путь к документу
+    pdf_path = conf.PDF_PATH + file_name + ".pdf"
+    try:
+        return open(pdf_path, "rb")
+    except Exception as error:
+        send_error_message(error)
 
 
 def get_path_photo(file_name):  # Формируем путь к изображению именника
