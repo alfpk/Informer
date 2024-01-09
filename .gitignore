@@ -1,2 +1,4 @@
 /.venv
 /.vscode
+/modules/__pycache__
+/templates/__pycache__
