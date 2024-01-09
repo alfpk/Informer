@@ -1,16 +1,23 @@
+VERSION = "1.1.1"
+#################################################################################################
+
 import telebot
 import pymysql
 import time
 import sys
+import os
+import multiprocessing as multi_proc
+import schedule
+
+# import schedule
 
 from datetime import date
+from templates import msg
 from modules import settings as conf
 from templates import greetings as greet, errors as err
 from datetime import datetime
+from telebot import types
 
-#################################################################################################
-VERSION = "1.0"
-#################################################################################################
 
 bot = telebot.TeleBot(conf.TOKEN)  # Инициируем бота
 
